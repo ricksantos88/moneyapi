@@ -78,14 +78,17 @@ public class MoneyExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		private String mensagemUsario;
 		private String mensagemDesenvolvedor;
+		
 		public Erro(String mensagemUsario, String mensagemDesenvolvedor) {
 			super();
 			this.mensagemUsario = mensagemUsario;
 			this.mensagemDesenvolvedor = mensagemDesenvolvedor;
 		}
+		
 		public String getMensagemUsario() {
 			return mensagemUsario;
 		}
+		
 		public String getMensagemDesenvolvedor() {
 			return mensagemDesenvolvedor;
 		}
